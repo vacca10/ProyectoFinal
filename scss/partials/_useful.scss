@@ -1,0 +1,56 @@
+.useful{
+  padding-bottom: 10vh;
+
+  &__image{
+    height:25vh + 5vh;
+    width: 100%;
+    background:         
+    linear-gradient(
+        to right,
+        rgba($primary-color, 0.7),
+        rgba($primary-color, 0.3)
+      ), 
+      url("../img/emilianoPerro.jpg")bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+
+    h2{
+      margin:auto;
+      align-items: center;
+      line-height: 1 + 1;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: weight(heavy);
+      background-size: cover;
+      background-color: $primary-color;
+    }
+  }
+
+  &__define { 
+    width: 90vw;
+    height: 20%;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto 2% auto;
+    background: lighten($primary-color, 10%);
+    padding: 5px;
+    border: 4px solid lighten($secondary-color, 15%);
+    align-items: center;
+    text-align: center;
+    justify-items: stretch;
+    font-size:0.6rem * 2;
+  }
+
+  &__text{
+    color: white;
+    line-height: 40px / 2;
+    font-size: 1.1rem;
+  }
+
+}
