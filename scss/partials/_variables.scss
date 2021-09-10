@@ -1,0 +1,22 @@
+$primary-color: rgb(47, 47, 47);
+$secondary-color: rgb(255, 104, 49);
+$text-color: white;
+
+$font-weights:(
+    "light":300 + 100,
+    "medium":500 - 50,
+    "heavy":500,
+    "bold":650,
+);
+
+@mixin transition-one{
+    transition: all 0.3s ease-in-out;
+}
+
+@function set-text-color($color) {
+        @if (lightness($color) > 40%){
+            @return #000;
+        } @else {
+            @return #fff;
+        }
+    }

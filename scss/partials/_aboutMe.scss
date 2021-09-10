@@ -1,0 +1,57 @@
+.aboutMe{
+  height: 1200px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-image:
+    linear-gradient(
+    to right,
+    rgba($primary-color, 0.8),
+    rgba($primary-color, 0.4)),
+    url("../img/emilianoPerro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 1.2rem;
+
+  #descrip{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color:$primary-color;
+    background-size: cover;
+  }
+
+  &_image{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+
+    
+    p{
+      margin-bottom: 2rem;
+    }
+  }
+
+  h6{
+    font-size: 0.9rem;
+    margin-top:1px;
+  }
+
+
+
+  .jobs_define{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto 1rem auto;
+    padding-bottom: 10px;
+    justify-items: center;
+    background: lighten($primary-color, 20%);
+    background-size: cover;
+    border-bottom: 4px solid $secondary-color;
+    text-align: center;
+  }
+}

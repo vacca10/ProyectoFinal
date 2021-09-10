@@ -1,0 +1,155 @@
+@media (min-width:551px) {
+.carousel{
+  padding-bottom: 2rem;
+  
+  &-inner{ 
+    width: 70vw;    
+    margin: auto;
+    row-gap: 1rem;
+  }
+
+  &-item{
+    position: relative;
+    border-bottom: 5px solid pink;
+    overflow: hidden;
+    font-weight: weight(bold);
+    font-size: 1rem;
+
+    img{
+      width: 50vw;
+      height:50vh;
+    }  
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: $primary-color;
+      opacity: 0;
+      @include transition-one;
+    }
+  
+  &-a{
+    position: relative;
+    margin-top: -2.25rem;
+    margin-left: auto;
+    border: solid 2px $secondary-color;
+    color: $secondary-color;
+    cursor: pointer;
+    height: 50%;
+    width: 40%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+  }
+
+    &:hover {
+      text-transform: uppercase;
+    }
+
+  &-b{
+    position: relative;
+    margin-right: auto;
+    border: solid 2px $secondary-color;
+    color: $secondary-color;
+    cursor: pointer;
+    height: 50%;
+    width: 40%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+  }
+
+  &:hover {
+      text-transform: uppercase;
+  }
+  }
+}
+}
+
+@media (max-width:550px){
+  .carousel{
+    padding-bottom: 2rem;
+    
+    &-inner{ 
+      width: 90vw;    
+      margin: auto;
+    }
+  
+    &-item{
+      position: relative;
+      border-bottom: 5px solid pink;
+      overflow: hidden;
+      font-weight: weight(bold);
+      font-size: 1rem;
+  
+      img{
+        height:30vh;
+      } 
+  
+      &::after{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $primary-color;
+        opacity: 0;
+        @include transition-one;
+      }
+    
+    &-a{
+      position: relative;
+      margin-top: 0.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0.5rem;
+      border: solid 2px $secondary-color;
+      color: $secondary-color;
+      cursor: pointer;
+      height: 50%;
+      width: 40%;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+      &:hover {
+        text-transform: uppercase;
+      }
+  
+    &-b{
+      position: relative;
+      margin-top: 0.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0.5rem;
+      border: solid 2px $secondary-color;
+      color: $secondary-color;
+      cursor: pointer;
+      height: 50%;
+      width: 40%;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    &:hover {
+        text-transform: uppercase;
+    }
+    }
+  }
+  }
+  
